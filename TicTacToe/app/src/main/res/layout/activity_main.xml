@@ -7,118 +7,37 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context="com.example.steva.tictactoe.MainActivity">
 
-<RelativeLayout
+<LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
     <TextView
-        android:id="@+id/text_view_p1"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Player 1: 0"
-        android:textSize="30sp" />
+        android:gravity="center"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="75sp"
+        android:text="@string/seleziona_modalit_di_gioco"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"/>
 
-    <TextView
-        android:id="@+id/text_view_p2"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/single"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view_p1"
-        android:text="Player 2: 0"
-        android:textSize="30sp" />
+        android:text="GIOCATORE SINGOLO"
+        android:layout_margin="30sp"/>
 
     <Button
-        android:id="@+id/button_reset"
-        android:layout_width="wrap_content"
+        android:id="@+id/multi"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:layout_marginEnd="33dp"
-        android:text="reset" />
-
-</RelativeLayout>
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1">
-
-    <Button
-        android:id="@+id/button_00"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-    <Button
-        android:id="@+id/button_01"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-    <Button
-        android:id="@+id/button_02"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1">
-
-    <Button
-        android:id="@+id/button_10"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-    <Button
-        android:id="@+id/button_11"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-    <Button
-        android:id="@+id/button_12"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-</LinearLayout>
-
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="1">
-
-    <Button
-        android:id="@+id/button_20"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-    <Button
-        android:id="@+id/button_21"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
-    <Button
-        android:id="@+id/button_22"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:textSize="60sp" />
-
+        android:text="MULTIGIOCATORE"
+        android:layout_margin="30sp"/>
 </LinearLayout>
 
 </LinearLayout>
