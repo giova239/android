@@ -1,0 +1,8 @@
+<resources>
+    <string name="reset">reset score</string>
+    <string name="player_2_0">Player 2:\n0</string>
+    <string name="player_1_0">Player 1:\n0</string>
+    <string name="you_n0">you:\n0</string>
+    <string name="cpu_n0">cpu:\n0</string>
+    <string name="app_name">TicTacToe</string>
+</resources>
