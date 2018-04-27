@@ -20,17 +20,24 @@ public class gameActivity extends AppCompatActivity {
     float x1,x2,y1,y2;
     final static float MIN_DISTANCE = 150.0f;
 
-    Labyrinth game = new Labyrinth(10,10);
+    Labyrinth game;
     cell cellFactory = new cell();
 
-    int xPosition = game.getStartX();
-    int yPosition = game.getStartY();
+    int xPosition;
+    int yPosition;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+
+        Bundle extras = getIntent().getExtras();
+
+        game = new Labyrinth(extras.getInt("row",0),extras.getInt("column", 0));
+
+        xPosition = game.getStartX();
+        yPosition = game.getStartY();
 
         Log.d("debug", game.toString());
 
